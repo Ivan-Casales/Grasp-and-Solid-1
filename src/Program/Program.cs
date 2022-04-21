@@ -10,9 +10,12 @@ using System.Linq;
 using Full_GRASP_And_SOLID.Library;
 
 namespace Full_GRASP_And_SOLID
-{
+{ 
     public class Program
     {
+        // Los comentarios sobre que patrón o principio se utilizó para asignar la responsabilidad se encuentra 
+        // en la clase Recipe.
+
         private static ArrayList productCatalog = new ArrayList();
 
         private static ArrayList equipmentCatalog = new ArrayList();
