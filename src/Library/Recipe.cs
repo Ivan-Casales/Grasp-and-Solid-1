@@ -50,7 +50,7 @@ namespace Full_GRASP_And_SOLID.Library
 
             foreach (Step step in this.steps)
             {
-                InputCost += step.Input.UnitCost;
+                InputCost += (step.Input.UnitCost * step.Quantity);
                 EquipmentCost += (step.Equipment.HourlyCost * step.Time);
             } 
             double TotalCost = InputCost + EquipmentCost;
