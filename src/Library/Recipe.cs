@@ -11,11 +11,14 @@ namespace Full_GRASP_And_SOLID.Library
 {
     public class Recipe
     {
-        // Se decidio asignar la responsabilidad de calcular el costo total a la clase Recipe. Dicha desición
-        // se baso en el principio Expert, ya que Recipe es la ideal para realizar el método, posee el conocimiento
-        // de todos los datos necesarios para calcular el total, por lo tanto se convierte en la misma en el experto 
-        // de conocimientos de todos los datos de la Receta, la cual es capaz de acceder a los distintos atributos 
-        // de las demas clase como Step, Equipment y Product.
+            /// <summary>
+        /// **Agregar la responsabilidad de calcular el costo total de producir un producto final**
+        /// **¿Qué patrón o principio usan para asignar esta responsabilidad?**
+        /// El patrón utilizado es el Expert. Para realizar la responsabilidad de calcular el costo total 
+        /// de producir un producto final es necesario conocer todos los datos necesario, por lo que debe tener 
+        /// la capacidad de acceder a clases como Step, Equipment y Product. La clase Recipe es experta 
+        /// manejando toda la información necesaria, por lo que se le designa la responsabilidad.
+        /// </summary>
 
         private ArrayList steps = new ArrayList();
 
